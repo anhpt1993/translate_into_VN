@@ -12,7 +12,7 @@ def is_in_dict(text, dict):
         return False
 
 if __name__ == '__main__':
-    word = input_word("Enter the word to be translated into Vietnamese: ")
+    word = input_word("Enter the word to be translated into Vietnamese: ").lower()
     if is_in_dict(word, dict):
         print(f"'{word}' : '{dict[word]}'")
     else:
